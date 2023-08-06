@@ -28,8 +28,6 @@ spec:
             - name: secrets-store-inline
               mountPath: "/etc/secrets"
               readOnly: true
-            - name: testapp-data
-              mountPath: "/data"
           {{- end }}
 
       {{- if .Values.azure }}
