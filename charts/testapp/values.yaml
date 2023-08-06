@@ -1,0 +1,15 @@
+hostname: testapp.local
+ingressClass: nginx
+image: fnwicr.azurecr.io/testapp
+tag: latest
+
+azure:
+  keyvaultName: keyvaultName
+  resourceGroup: resourceGroupName
+  subscriptionId: subscriptionId
+  tenantId: tenantId
+  clientId: clientId
+  identityName: identityName
+  secrets:
+    - name: testapp-test
+      key: TESTVALUE
