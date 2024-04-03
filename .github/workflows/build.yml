@@ -19,7 +19,7 @@ jobs:
           set -euxo pipefail
           docker build -f Dockerfile -t "fnwicr.azurecr.io/testapp:latest" .
           docker push "fnwicr.azurecr.io/testapp:latest"
-        workingDirectory: ./TestApp.Web
+        working-directory: ./TestApp.Web
 
       - name: Build chart and release
         env:
